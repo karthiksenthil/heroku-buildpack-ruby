@@ -19,7 +19,7 @@ end
 
 `echo "-----> Fetching and installing flex"`
 #`cd $WGET_BUILD`
-`curl -O http://sourceforge.net/projects/flex/files/flex/flex-2.5.35/flex-2.5.35.tar.bz2/download`
+`curl -O -L http://sourceforge.net/projects/flex/files/flex/flex-2.5.35/flex-2.5.35.tar.bz2/download`
 `tar jxvf flex-2.5.35.tar.bz2 `
 `cd flex-2.5.35`
 `./configure`
