@@ -18,13 +18,14 @@ LanguagePack::Instrument.trace 'compile', 'app.compile' do
 end
 
 
-'mktmpdir() {
+`mktmpdir() {
   dir=$(mktemp -t fakesu-$1-XXXX);
   rm -rf $dir;
   mkdir -p $dir;
   echo $dir;
-}; FLEX_BUILD="$(mktmpdir flex)"`
+}`
 
+`FLEX_BUILD="$(mktmpdir flex)"`
 
 `echo "-----> Fetching and installing flex"`
 `cd $FLEX_BUILD`
