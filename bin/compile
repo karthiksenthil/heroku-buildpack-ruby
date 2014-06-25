@@ -16,3 +16,13 @@ LanguagePack::Instrument.trace 'compile', 'app.compile' do
     end
   end
 end
+
+`echo "-----> Fetching and installing flex"`
+#`cd $WGET_BUILD`
+`curl -O http://sourceforge.net/projects/flex/files/flex/flex-2.5.35/flex-2.5.35.tar.bz2/download`
+`tar jxvf flex-2.5.35.tar.bz2 `
+`cd flex-2.5.35`
+`./configure`
+`make`
+`make install`
+`echo "flex installed"`
