@@ -23,9 +23,8 @@ end
   rm -rf $dir;
   mkdir -p $dir;
   echo $dir;
-}'
+}; FLEX_BUILD="$(mktmpdir flex)"`
 
-`FLEX_BUILD="$(mktmpdir flex)"`
 
 `echo "-----> Fetching and installing flex"`
 `cd $FLEX_BUILD`
